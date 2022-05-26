@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>David_hrkt</title>
+</head>
+<body>
+    <style>
+        *{
+  padding: 0;
+  margin: 0;  
+}
+/* barre de scrolle */
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: chartreuse; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: chartreuse; 
+  }
+/* nom de compte */
+.nom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 80px;
+    border: 7px solid crimson;
+    border-radius: 30px;
+  
+}
+.scanner h1{
+
+    font-size: 3rem;
+    color: cyan;
+    position: relative;
+}
+.scanner h1:before{
+
+    font-size: 3rem;
+    content: "David_hrkt";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-right: 7px solid crimson;
+    overflow: hidden;
+    color: crimson;
+    animation: load 4s linear infinite;
+}
+@keyframes load{
+    0%, 10%, 100%{
+        width: 0;
+    }
+    60%, 80%{
+        width: 100%;
+    }
+}
+/* cadre lumineau */
+.card{
+    display: flex;
+    justify-content: center;
+    margin: 35px;
+    width: 280px;
+    height: 240px;
+    position: relative;
+    border: 29px solid;
+    background-color: cyan;
+    border-image:
+    linear-gradient(
+           #ff512f,
+           #dd2476,
+           #1c64ff) 1;
+    animation: rotate
+     2.5s
+     ease-in infinite;
+     
+}
+
+
+@keyframes rotate {
+    50%{
+        border-image: 
+        linear-gradient(
+            360deg,
+            #ff512f,
+            #dd2476,
+            #1c64ff) 1;
+    }
+    
+}
+
+/* réseaux sociaux */
+/* titre des réseaux sociaux */
+
+.titre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .my{
+     color: cyan;
+     font-size: 30px;
+     height: 50px;
+ }
+ .social{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border: 7px white solid;
+     height: 232px;
+     width: 267px;
+ }
+ .items a{
+     text-decoration: none;
+ }
+ .items{
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     list-style-type: none;
+     height: 220px;
+     width: 200px;
+     
+ }
+ .item{
+     border-radius: 20px;
+     border: 4px tomato solid;
+    
+ }
+ .itm{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 20px;
+ }
+ .item:hover{
+     color: crimson;
+     background-color: yellow;
+     opacity: 0.7;
+     transform: scale(1.1,1.1);
+     transition:0.3s all;
+ }
+/* haut de page */
+.mysocial{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    
+    
+}
+/* photo de profil */
+.profil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(2.png);
+    border: 5px blue solid;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    border-radius: 50px;
+    padding: 15px;
+  
+
+}
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 50px;
+    border-color: crimson;
+    border: 5px crimson  solid;
+    border: 20%;
+    margin: 2px;
+}
+
+/* menu fix en bas */
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: fixed;
+    border: 10px crimson solid;
+    background-color: cyan;
+    border-radius: 20px;
+    width: 387px;
+    
+    
+}
+.lien{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    
+    
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 82px;
+    background-color: black;
+    border: crimson 4px solid;
+    border-radius: 20px;
+}
+.btn:hover{
+    transform: scale(1.1,1.1);
+    transition:0.3s all;
+    background-color: darkgrey;
+    height: 58px;
+    width: 78px;
+}
+/* mode sombre */
+/* changeur de thème */
+
+  
+  .dark-mode {
+    background-color: black;
+    color: white;
+  }
+  body {
+    
+    background-color: white;
+    color: black;
+  }
+  /* photo */
+  .tof{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+.image{
+    height: 80px;
+    width: 120px;
+    border-radius: 30px;
+    border: 7px solid crimson;
+}
+    </style>
+ <!-- nom de compte -->
+    <div class="nom">
+     <div class="scanner">
+        <h1>David_hrkt</h1>
+     </div>
+    </div>     
+   <!-- photo de couvertur et de profil -->
+        <div class="mysocial">
+        </div>
+      <div class="profil">
+          <img class="img" src="1.png" alt="">
+      </div>
+      <!-- titre des réseaux sociaux -->
+      <div class="titre"><h2 class="my"><img src="https://img.icons8.com/ios/35/008b8b/centralized-network.png"/>MySocial</h2></div>
+
+      <figure class="card">
+        <figcaption>
+      <!-- réseaux social -->
+      <div class="social">
+          <div class="items">
+              <button class="item"><a class="itm" href="https://www.facebook.com/sim.mlk.50/"> <img src="https://img.icons8.com/neon/48/000000/experimental-facebook-new-neon.png"/> Facebook</a></button>
+              <button class="item"><a class="itm" href="https://www.instagram.com/david_hrkt/?hl=fr"><img src="https://img.icons8.com/neon/48/000000/experimental-instagram-new-neon.png"/> Instagram</a></button>
+             <button class="item"><a class="itm" href="https://www.linkedin.com/in/harkat-david-821827194/?midToken=AQEXTuLgaiEpaA&trk=eml-email_pymk_01-header-54-profile&trkEmail=eml-email_pymk_01-header-54-profile-null-cobu8p%7Ekevwukor%7Esn-null-neptune%2Fprofile%7Evanity%2Eview"><img src="https://img.icons8.com/nolan/48/linkedin-circled.png"/> Linkdin</a></button>
+                <button class="item"><a class="itm" href="https://l.facebook.com/l.php?u=https%3A%2F%2Ftwitter.com%2FHarkatDavid%3Ft%3DqQHQl6R-63xYN2Yn1bJ3NA%26s%3D09%26fbclid%3DIwAR3WSG2pn6dKG4DWPsuS5DcJU-QZQOzwiSaeubmX9z0iZIuAVhcK-bdwhz4&h=AT3A1MSUYGSkoXSXadWupXvmAxLZMUhWzgwzsqSeauwJSA-iHD92JJ4oGwKbK36aungXRKUmjwmhQz1MZBrQPv_IbRWAjziEZ-EujBMmMXHAoBewAZjySP5Dy7vLYm5cYgwzkLHU8C9h1MA"><img src="https://img.icons8.com/nolan/48/twitter-squared.png"/> Twitter</a></button>
+
+                </div>
+
+
+            </div>
+
+    </figcaption>
+
+</figure>
+<!-- photo -->
+<div class="tof"> <img class="image" src="3.png" alt=""></div>
+
+
+          <!-- menu fix en bas -->
+          <div class="menu">
+            <div class="lien">
+              <button class="btn"><a  href="https://www.instagram.com/site_web_dz/?hl=fr"> <img src="https://img.icons8.com/dotty/45/ffff00/info.png"/></a></button> 
+              <button class="btn"><a  href="https://mail.yahoo.com/d/compose/4281928994"> <img src="https://img.icons8.com/ios-filled/45/7fff00/mail.png"/> </a><button> 
+              <button class="btn"><a  href="https://www.google.com/maps/place/B%C3%A9ja%C3%AFa/@36.7700719,5.006979,12z/data=!3m1!4b1!4m5!3m4!1s0x12f2cca1a82082c5:0x7807b41e13330b6e!8m2!3d36.7515258!4d5.0556837"> <img src="https://img.icons8.com/external-creatype-blue-field-colourcreatype/45/000000/external-maps-interface-a2-creatype-blue-field-colourcreatype.png"/></a></button>
+              <button class="btn"  onclick="myFunction()">
+                    <img src="https://img.icons8.com/ios-filled/45/ffffff/do-not-disturb-2.png"/></button>
+            </div>
+        </div>
+
+
+
+
+
+<script>
+                   // changeur de thème
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+
+</script>
+
+    <!-- JavaScripte -->
+    <script src="code.js"></script>
+
+</body>
+</html>
